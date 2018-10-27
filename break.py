@@ -5,4 +5,5 @@ while 1:
 	print("hello")
 	i+=1
 	if i==5:
-		Break
+		break
+print('hi')
