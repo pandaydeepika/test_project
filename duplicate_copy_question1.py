@@ -1,12 +1,12 @@
 # INTERVIEW QUESTIONS:-
-#print all list accept jessica 
-# 
-# student_name=["deepika","ram","shayam","govind","jessica"]
-# for i in student_name:
-# 	if i!= "jessica":
-# 		pass
-# 		print(i)
-		
+#Print all list accept jessica 
+ 
+ # student_name=["deepika","ram","shayam","govind","jessica"]
+#  for i in student_name:
+#  	if i!= "jessica":
+#  		pass
+#  		print(i)
+# 		
 # print and compare the list if it is match 
 # 3-->[1,2,3,4,3]-True
 # -1-->[1,5,3,4]-False
@@ -222,23 +222,61 @@
 		
 #11
 
-class sequence:
+# class sequence:
+# 	def __init_(self):
+# 		self.name=""
+# 	
+# 	def number_sequence(self):
+# 		value=[]
+# 		self.name=input("Enter the numbers:")
+# 		items=[x for x in self.name.split(",")]
+# 		for p in items:
+# 			intp=int(p,2)
+# 			if not intp%5:
+# 				value.append(p)
+# 				print(",".join(value))
+# 			
+# # 
+# p1 = sequence()
+# p1.number_sequence()
+		
+		
+#12
+
+# class number:
+# 	def __init_(self):
+# 		self.name=""	
+# 		
+# 	def even_number(self):
+# 		values=[]
+# 	# 	s = str(i)
+# 		for i in range(1,30):
+# 			if i % 2 == 0:
+# 				values.append(i)
+# 				print(values)
+# 
+# p1 = number()
+# p1.even_number()
+
+
+#13
+
+class sentence:
 	def __init_(self):
 		self.name=""
-	
-	def number_sequence(self):
-		value=[]
-		self.name=input("Enter the numbers:")
-		items=[x for x in self.name.split(",")]
-		for p in items:
-			intp=int(p,2)
-			if not intp%5:
-				value.append(p)
-				print(",".join(value))
-			
+		
+	def calculate(self):
+		self.name=input("Enter the value:")
+		d={"DIGITS":0, "LETTERS":0}
+		for c in self.name:
+			if c.isdigit():
+				d["DIGITS"]+=1
+			elif c.isalpha():
+				d["LETTERS"]+=1
+			else:
+				pass
+		print("LETTERS", d["LETTERS"])
+		print("DIGITS", d["DIGITS"])
 
-p1 = sequence()
-p1.number_sequence()
-		
-		
-		
+p1 = sentence()
+p1.calculate()
