@@ -261,22 +261,66 @@
 
 #13
 
-class sentence:
-	def __init_(self):
+# class sentence:
+# 	def __init_(self):
+# 		self.name=""
+# 		
+# 	def calculate(self):
+# 		self.name=input("Enter the value:")
+# 		d={"DIGITS":0, "LETTERS":0}
+# 		for c in self.name:
+# 			if c.isdigit():
+# 				d["DIGITS"]+=1
+# 			elif c.isalpha():
+# 				d["LETTERS"]+=1
+# 			else:
+# 				pass
+# 		print("LETTERS", d["LETTERS"])
+# 		print("DIGITS", d["DIGITS"])
+# 
+# p1 = sentence()
+# p1.calculate()
+
+#14
+
+# class sentence:
+# 	def __init_(self):
+# 		self.name=""
+# 		
+# 	def calculate(self):
+# 		self.name=input("Enter the value:")
+# 		d={"UPPERCASE":0, "LOWERCASE":0}
+# 		for c in self.name:
+# 			if c.isupper():
+# 				d["UPPERCASE"]+=1
+# 			elif c.islower():
+# 				d["LOWERCASE"]+=1
+# 			else:
+# 				pass
+# 		print("UPPERCASE", d["UPPERCASE"])
+# 		print("LOWERCASE", d["LOWERCASE"])
+# 		
+# 		
+# p1=sentence()
+# p1.calculate()
+
+
+#15
+
+class sequence():
+	def __init(self):
 		self.name=""
 		
 	def calculate(self):
-		self.name=input("Enter the value:")
-		d={"DIGITS":0, "LETTERS":0}
-		for c in self.name:
-			if c.isdigit():
-				d["DIGITS"]+=1
-			elif c.isalpha():
-				d["LETTERS"]+=1
-			else:
-				pass
-		print("LETTERS", d["LETTERS"])
-		print("DIGITS", d["DIGITS"])
-
-p1 = sentence()
+		self.name=input("Enter the number:")
+		for a in self.name:
+			n1 = int( "%s" % a )
+			n2 = int( "%s%s" % (a,a) )
+			n3 = int( "%s%s%s" % (a,a,a) )
+			n4 = int( "%s%s%s%s" % (a,a,a,a))
+			print (n1+n2+n3+n4)
+			
+p1=sequence()
 p1.calculate()
+
+#
