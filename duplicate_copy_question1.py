@@ -307,20 +307,85 @@
 
 #15
 
-class sequence():
-	def __init(self):
-		self.name=""
-		
-	def calculate(self):
-		self.name=input("Enter the number:")
-		for a in self.name:
-			n1 = int( "%s" % a )
-			n2 = int( "%s%s" % (a,a) )
-			n3 = int( "%s%s%s" % (a,a,a) )
-			n4 = int( "%s%s%s%s" % (a,a,a,a))
-			print (n1+n2+n3+n4)
-			
-p1=sequence()
-p1.calculate()
+# class sequence():
+# 	def __init(self):
+# 		self.name=""
+# 		
+# 	def calculate(self):
+# 		self.name=input("Enter the number:")
+# 		for a in self.name:
+# 			n1 = int( "%s" % a )
+# 			n2 = int( "%s%s" % (a,a) )
+# 			n3 = int( "%s%s%s" % (a,a,a) )
+# 			n4 = int( "%s%s%s%s" % (a,a,a,a))
+# 			print (n1+n2+n3+n4)
+# 			
+# p1=sequence()
+# p1.calculate()
 
-#
+#16
+
+# from math import *
+# class sequence():
+# 	def __init(self):
+# 		self.name=""
+# 		
+# 	def calculate(self):
+# 		self.name=input("Enter the number:")
+# 		values=self.name
+# 		number=[x for x in values.split(",")if int(x)%2!=0]
+# 		print(number,math.sqrt(number))
+# #   		print("Square root of {} is {} ".format(number,math.sqrt(number)))
+# 		
+# 		
+# 		
+# p1=sequence()
+# p1.calculate()
+
+#17
+
+netAmount = 0
+while True:
+	s = input("Enter the value:")
+	if not s:
+		break
+	values = s.split(" ")
+	operation = values[0]
+	amount = int(values[1])
+	if operation=="D":
+		netAmount+=amount
+	elif operation=="W":
+		netAmount-=amount
+	else:
+		pass
+	print(netAmount)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
