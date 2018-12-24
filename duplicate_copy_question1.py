@@ -342,24 +342,35 @@
 # p1=sequence()
 # p1.calculate()
 
+
+
 #17
 
-netAmount = 0
-while True:
-	s = input("Enter the value:")
-	if not s:
-		break
-	values = s.split(" ")
-	operation = values[0]
-	amount = int(values[1])
-	if operation=="D":
-		netAmount+=amount
-	elif operation=="W":
-		netAmount-=amount
-	else:
-		pass
-	print(netAmount)
 
+class bank():
+	def __init__(self):
+		self.name=""
+	
+	def calculate(self):
+		netAmount = 0
+		while True:
+			self.transaction = input("Enter the value:")
+			s = self.transaction
+			if not s:
+				break
+			values = s.split(" ")
+			operation = values[0]
+			amount = int(values[:,1])
+			if operation=="D":
+				netAmount+=amount
+			elif operation=="W":
+				netAmount-=amount
+			else:
+				pass
+			print(netAmount)
+
+p1 = bank()
+p1.calculate()
 
 
 
