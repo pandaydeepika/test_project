@@ -324,58 +324,70 @@
 # p1.calculate()
 
 #16
-
-# from math import *
 # class sequence():
-# 	def __init(self):
+# 	def __init_(self):
 # 		self.name=""
 # 		
 # 	def calculate(self):
-# 		self.name=input("Enter the number:")
-# 		values=self.name
-# 		number=[x for x in values.split(",")if int(x)%2!=0]
-# 		print(number,math.sqrt(number))
-# #   		print("Square root of {} is {} ".format(number,math.sqrt(number)))
-# 		
-# 		
-# 		
+# 		values = input("Enter the value:")
+# 		numbers = [x for x in values.split(",") if int(x)%2!=0]
+# 		print (",".join(numbers))
+# 
 # p1=sequence()
 # p1.calculate()
-
-
 
 #17
 
 
-class bank():
-	def __init__(self):
-		self.name=""
-	
-	def calculate(self):
-		netAmount = 0
-		while True:
-			self.transaction = input("Enter the value:")
-			s = self.transaction
-			if not s:
-				break
-			values = s.split(" ")
-			operation = values[0]
-			amount = int(values[:,1])
-			if operation=="D":
-				netAmount+=amount
-			elif operation=="W":
-				netAmount-=amount
-			else:
-				pass
-			print(netAmount)
+# class bank():
+# 	def __init__(self):
+# 		self.name=""
+# 	
+# 	def calculate(self):	
+# 		netAmount = 0
+# 		while True:
+# 			s = input("Enter Value:")
+# 			if not s:
+# 				break
+# 			values = s.split(" ")
+# 			operation = values[0]
+# 			amount = int(values[1])
+# 			if operation=="D":
+# 				netAmount+=amount
+# 			elif operation=="W":
+# 				netAmount-=amount
+# 			else:
+# 				pass
+# 			print(netAmount)
+# 
+# p1 = bank()
+# p1.calculate()
+# 
 
-p1 = bank()
-p1.calculate()
+#18
 
-
-
-
-
+import re
+value = []
+items=[x for x in input("Enter the values:").split(',')]
+for p in items:
+	if len(p)<6 or len(p)>12:
+		continue
+	else:
+		pass
+	if not re.search("[a-z]",p):
+		continue
+	elif not re.search("[0-9]",p):
+		continue
+	elif not re.search("[A-Z]",p):
+		continue
+	elif not re.search("[$#@]",p):
+		continue
+	elif re.search("\s",p):
+		continue
+	else:
+		pass
+	value.append(p)
+	print(",".join(value))
 
 
 
